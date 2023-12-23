@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mazda RX7 FD</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<style>
+		body{
+			background-image: url("zdjencia/sf40.jpg");
+			background-repeat: repeat-y;
+			background-position: right;
+			background-attachment: fixed;
+			margin-right: 290px;
+		}
+		@media screen and (max-width:1200px){
+			body{
+				background-image: none;
+				margin-right: 10px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+	 <h1>7 najpiękniejszych samochodów</h1>
+	</header>
+	
+	<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Strona główna</a>
+    <a href="RS7.html">Audi RS7</a>
+    <a href="LFA.html">Lexus LFA</a>
+	  <a href="R8.html">Audi R8</a>
+	  <a href="RX7.html">Mazda RX7</a>
+	  <a href="F40.html">Ferrari F40</a>
+	  <a href="P1.html">McLaren P1</a>
+	  <a href="Multipla.html">Fiat Multipla</a>
+  </div>
+</div>
+	<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+		
+	
+	<div class="topnav">
+  	<a class="active" href="index.html">Strona główna</a>
+  	<a href="RS7.html">Audi RS7</a>
+  	<a href="LFA.html">Lexus LFA</a>
+ 	<a href="R8.html">Audi R8</a>
+	<a href="RX7.html">Mazda RX7</a>
+	<a href="F40.html">Ferrari F40</a>
+	<a href="P1.html">McLaren P1</a>
+	<a href="Multipla.html">Fiat Multipla</a>
+</div>
+	<nav>
+    <ul>
+      <li><a href="#LMAO">Opis</a></li>
+    </ul>
+    <ul>
+      <li><a href="#Dane">Dane techniczne</a></li>
+    </ul>
+  </nav>
+	<div id="LMAO">
+		<br><br>
+	Ferrari F40 to legendarny supersamochód, który zdefiniował standardy doskonałości w świecie motoryzacji. Zaprojektowany z myślą o osiągach, F40 charakteryzuje się niepowtarzalnym designem, lekką konstrukcją, i potężnym silnikiem V8. Wyprodukowany w latach 1987-1992, nadal pozostaje ikoną Ferrari, symbolizującą pasję i dziedzictwo włoskiego producenta samochodów sportowych.
+
+	<br><br><br><br><br><br><br><br><br><br>
+	<img src="zdjencia/f40.jpg" class="animated-element">
+	<br><br><br><br><br><br><br><br><br><br>
+	</div>
+	<div id="Dane">
+	<h1>Parametry Ferrari F40</h1>
+  <ul>
+    <li><strong>Silnik:</strong> V8, 2.9-litrowy, twin-turbo</li>
+    <li><strong>Moc:</strong> Około 478 KM przy 7,000 obr/min</li>
+    <li><strong>Moment obrotowy:</strong> Około 577 Nm przy 4,000 obr/min</li>
+    <li><strong>Przyspieszenie 0-100 km/h:</strong> Około 4.1 sekundy</li>
+    <li><strong>Prędkość maksymalna:</strong> Około 324 km/h</li>
+    <li><strong>Napęd:</strong> Tylny (RWD)</li>
+    <li><strong>Skrzynia biegów:</strong> Manualna, 5-biegowa</li>
+    <li><strong>Zawieszenie:</strong> Niezależne, przednie i tylne</li>
+    <li><strong>Waga:</strong> Około 1,100 kg</li>
+    <li><strong>Hamulce:</strong> Tarcze wentylowane, przód i tył</li>
+    <li><strong>Produkcja:</strong> 1987–1992</li>
+  </ul>
+	</div>
+	<footer>
+        <p>&copy; 2023 Piotr Sasimowski 2TA</p>
+    </footer>
+</body>
+</html>

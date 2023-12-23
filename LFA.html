@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lexus LFA</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<style>
+		body{
+			background-image: url("zdjencia/slfa.jpg");
+			background-repeat: repeat-y;
+			background-position: right;
+			background-attachment: fixed;
+			margin-right: 290px;
+		}
+		@media screen and (max-width:1200px){
+			body{
+				background-image: none;
+				margin-right: 10px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+	 <h1>7 najpiękniejszych samochodów</h1>
+	</header>
+	
+	<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Strona główna</a>
+    <a href="RS7.html">Audi RS7</a>
+    <a href="LFA.html">Lexus LFA</a>
+	  <a href="R8.html">Audi R8</a>
+	  <a href="RX7.html">Mazda RX7</a>
+	  <a href="F40.html">Ferrari F40</a>
+	  <a href="P1.html">McLaren P1</a>
+	  <a href="Multipla.html">Fiat Multipla</a>
+  </div>
+</div>
+	<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+		
+	
+	<div class="topnav">
+  	<a class="active" href="index.html">Strona główna</a>
+  	<a href="RS7.html">Audi RS7</a>
+  	<a href="LFA.html">Lexus LFA</a>
+ 	<a href="R8.html">Audi R8</a>
+	<a href="RX7.html">Mazda RX7</a>
+	<a href="F40.html">Ferrari F40</a>
+	<a href="P1.html">McLaren P1</a>
+	<a href="Multipla.html">Fiat Multipla</a>
+</div>
+	<nav>
+    <ul>
+      <li><a href="#LMAO">Opis</a></li>
+    </ul>
+    <ul>
+      <li><a href="#Dane">Dane techniczne</a></li>
+    </ul>
+  </nav>
+	<div id="LMAO">
+		<br><br>
+	Lexus LFA, produkowany w ograniczonej liczbie egzemplarzy, to arcydzieło japońskiej inżynierii samochodowej, zdolne do osiągnięcia imponujących prędkości dzięki innowacyjnemu silnikowi V10. Jego unikalny design, luksusowe wnętrze i limitowana dostępność czynią go jednym z najbardziej pożądanych supersamochodów na świecie.
+	<br><br><br><br><br><br><br><br><br><br>
+	<img src="zdjencia/lfa.jpg" class="animated-element">
+	<br><br><br><br><br><br><br><br><br><br>
+		</div>
+	<div id="Dane">
+	<h1>Parametry Lexusa LFA</h1>
+  <ul>
+    <li><strong>Design:</strong> Oszałamiający, aerodynamiczny, futurystyczny</li>
+    <li><strong>Silnik:</strong> 4.8-litrowy V10</li>
+    <li><strong>Moc:</strong> Około 552 KM przy 8,700 obr/min</li>
+    <li><strong>Moment obrotowy:</strong> Około 480 Nm przy 6,800 obr/min</li>
+    <li><strong>Przyspieszenie 0-100 km/h:</strong> Około 3.7 sekundy</li>
+    <li><strong>Prędkość maksymalna:</strong> Około 325 km/h</li>
+    <li><strong>Konstrukcja:</strong> Monocoque z włókna węglowego</li>
+    <li><strong>Masa:</strong> Około 1,480 kg</li>
+    <li><strong>Zawieszenie:</strong> Niezależne, adaptacyjne</li>
+    <li><strong>Hamulce:</strong> Ceramiczne tarcze hamulcowe</li>
+    <li><strong>Wnętrze:</strong> Skórzane wykończenia, fotele sportowe</li>
+    <li><strong>Produkcja:</strong> Ograniczona do 500 egzemplarzy</li>
+  </ul>
+	
+	
+	
+	</div>
+	<footer>
+        <p>&copy; 2023 Piotr Sasimowski 2TA</p>
+    </footer>
+</body>
+</html>

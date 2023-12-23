@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>McLaren P1</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<style>
+		body{
+			background-image: url("zdjencia/sp1.jpg");
+			background-repeat: repeat-y;
+			background-position: right;
+			background-attachment: fixed;
+			margin-right: 290px;
+		}
+		@media screen and (max-width:1200px){
+			body{
+				background-image: none;
+				margin-right: 10px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+	 <h1>7 najpiękniejszych samochodów</h1>
+	</header>
+	
+	<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Strona główna</a>
+    <a href="RS7.html">Audi RS7</a>
+    <a href="LFA.html">Lexus LFA</a>
+	  <a href="R8.html">Audi R8</a>
+	  <a href="RX7.html">Mazda RX7</a>
+	  <a href="F40.html">Ferrari F40</a>
+	  <a href="P1.html">McLaren P1</a>
+	  <a href="Multipla.html">Fiat Multipla</a>
+  </div>
+		<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+		
+</div>
+	
+	<div class="topnav">
+  	<a class="active" href="index.html">Strona główna</a>
+  	<a href="RS7.html">Audi RS7</a>
+  	<a href="LFA.html">Lexus LFA</a>
+ 	<a href="R8.html">Audi R8</a>
+	<a href="RX7.html">Mazda RX7</a>
+	<a href="F40.html">Ferrari F40</a>
+	<a href="P1.html">McLaren P1</a>
+	<a href="Multipla.html">Fiat Multipla</a>
+</div>
+	<nav>
+    <ul>
+      <li><a href="#LMAO">Opis</a></li>
+    </ul>
+    <ul>
+      <li><a href="#Dane">Dane techniczne</a></li>
+    </ul>
+  </nav>
+	<div id="LMAO">
+		<br><br>
+	McLaren P1 to hipersamochód, który reprezentuje szczytowy poziom innowacji i osiągów w świecie motoryzacji. Zaprojektowany z myślą o połączeniu mocy i efektywności, P1 to hybrydowy supersamochód oferujący potężny silnik V8 oraz wsparcie elektryczne. Dzięki zaawansowanej aerodynamice, lekkiej konstrukcji i oszałamiającemu designowi, McLaren P1 to symbolem technologicznej doskonałości i pasji do szybkości.
+	<br><br><br><br><br><br><br><br><br><br>
+	<img src="zdjencia/p1.jpg" class="animated-element">
+	<br><br><br><br><br><br><br><br><br><br>
+		</div>
+	<div id="Dane">
+	<h1>Parametry McLaren P1</h1>
+  <ul>
+    <li><strong>Silnik:</strong> V8, 3.8-litrowy, twin-turbo</li>
+    <li><strong>Moc silnika spalinowego:</strong> Około 727 KM</li>
+    <li><strong>Moc silnika elektrycznego:</strong> Około 177 KM</li>
+    <li><strong>Moc łączna:</strong> Około 904 KM</li>
+    <li><strong>Moment obrotowy:</strong> Około 900 Nm</li>
+    <li><strong>Przyspieszenie 0-100 km/h:</strong> Około 2.8 sekundy</li>
+    <li><strong>Prędkość maksymalna:</strong> Około 349 km/h</li>
+    <li><strong>Napęd:</strong> Tylny (RWD)</li>
+    <li><strong>Skrzynia biegów:</strong> Hybrydowa, 7-biegowa automatyczna</li>
+    <li><strong>Zawieszenie:</strong> Niezależne, przednie i tylne, adaptacyjne</li>
+    <li><strong>Waga:</strong> Około 1,395 kg</li>
+    <li><strong>Hamulce:</strong> Tarcze ceramiczne, przód i tył</li>
+    <li><strong>Produkcja:</strong> 2013–2015 (375 egzemplarzy)</li>
+  </ul>
+	
+	</div>
+	<footer>
+        <p>&copy; 2023 Piotr Sasimowski 2TA</p>
+    </footer>
+</body>
+</html>

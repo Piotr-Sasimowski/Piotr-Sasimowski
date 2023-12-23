@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Audi R8</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<style>
+		body{
+			background-image: url("zdjencia/sr8.jpg");
+			background-repeat: repeat-y;
+			background-position: right;
+			background-attachment: fixed;
+			margin-right: 290px;
+		}
+		@media screen and (max-width:1200px){
+			body{
+				background-image: none;
+				margin-right: 10px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+	 <h1>7 najpiękniejszych samochodów</h1>
+	</header>
+	
+	<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Strona główna</a>
+    <a href="RS7.html">Audi RS7</a>
+    <a href="LFA.html">Lexus LFA</a>
+	  <a href="R8.html">Audi R8</a>
+	  <a href="RX7.html">Mazda RX7</a>
+	  <a href="F40.html">Ferrari F40</a>
+	  <a href="P1.html">McLaren P1</a>
+	  <a href="Multipla.html">Fiat Multipla</a>
+  </div>
+</div>
+	<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+		
+	
+	<div class="topnav">
+  	<a class="active" href="index.html">Strona główna</a>
+  	<a href="RS7.html">Audi RS7</a>
+  	<a href="LFA.html">Lexus LFA</a>
+ 	<a href="R8.html">Audi R8</a>
+	<a href="RX7.html">Mazda RX7</a>
+	<a href="F40.html">Ferrari F40</a>
+	<a href="P1.html">McLaren P1</a>
+	<a href="Multipla.html">Fiat Multipla</a>
+</div>
+	<nav>
+    <ul>
+      <li><a href="#LMAO">Opis</a></li>
+    </ul>
+    <ul>
+      <li><a href="#Dane">Dane techniczne</a></li>
+    </ul>
+  </nav>
+	<div id="LMAO">
+		<br><br>
+	Audi R8 to sportowy supersamochód, który łączy elegancję marki Audi z imponującymi osiągami. Charakteryzuje się innowacyjnym designem, zaawansowanym napędem quattro, potężnym silnikiem V10 i precyzyjnym prowadzeniem. To połączenie luksusu i sportowej wydajności sprawia, że Audi R8 to ikona niemieckiego inżynieryjnego mistrzostwa.
+	<br><br><br><br><br><br><br><br><br><br>
+	<img src="zdjencia/r8.jpg" class="animated-element">
+	<br><br><br><br><br><br><br><br><br><br>
+		</div>
+	<div id="Dane">
+	 <h1>Parametry Audi R8</h1>
+  <ul>
+    <li><strong>Silnik:</strong> 5.2-litrowy V10</li>
+    <li><strong>Moc:</strong> Od 540 do 620 KM (w zależności od wersji)</li>
+    <li><strong>Moment obrotowy:</strong> Od 540 do 580 Nm (w zależności od wersji)</li>
+    <li><strong>Przyspieszenie 0-100 km/h:</strong> Od 3.1 do 3.5 sekundy (w zależności od wersji)</li>
+    <li><strong>Prędkość maksymalna:</strong> Od 323 do 330 km/h (w zależności od wersji)</li>
+    <li><strong>Napęd:</strong> Quattro (napęd na wszystkie koła)</li>
+    <li><strong>Skrzynia biegów:</strong> Automatyczna, S tronic, 7-biegowa</li>
+    <li><strong>Zawieszenie:</strong> Niezależne, adaptacyjne</li>
+    <li><strong>Hamulce:</strong> Tarcze hamulcowe ceramiczne</li>
+    <li><strong>Waga:</strong> Od 1,595 do 1,720 kg (w zależności od wersji)</li>
+    <li><strong>Wnętrze:</strong> Sportowe fotele, luksusowe wykończenia</li>
+  </ul>
+	
+	
+	</div>
+	<footer>
+        <p>&copy; 2023 Piotr Sasimowski 2TA</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>7 najpiękniejszych samochodów</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body>
+
+	<header>
+	 <h1>7 najpiękniejszych samochodów</h1>
+	</header>
+	<div class="topnav">
+  	<a class="active" href="index.html">Strona główna</a>
+  	<a href="RS7.html">Audi RS7</a>
+  	<a href="LFA.html">Lexus LFA</a>
+ 	<a href="R8.html">Audi R8</a>
+	<a href="RX7.html">Mazda RX7</a>
+	<a href="F40.html">Ferrari F40</a>
+	<a href="P1.html">McLaren P1</a>
+	<a href="Multipla.html">Fiat Multipla</a>
+</div>
+	
+	<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Strona główna</a>
+    <a href="RS7.html">Audi RS7</a>
+    <a href="LFA.html">Lexus LFA</a>
+	  <a href="R8.html">Audi R8</a>
+	  <a href="RX7.html">Mazda RX7</a>
+	  <a href="F40.html">Ferrari F40</a>
+	  <a href="P1.html">McLaren P1</a>
+	  <a href="Multipla.html">Fiat Multipla</a>
+  </div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+	<nav>
+    <ul>
+      <li><a href="#ankeita">Ankieta</a></li>
+    </ul>
+  </nav>
+	
+	 <table class="custom-table">
+        <tr>
+            <td>
+				<div class="skrypt">
+				<div class="row">
+  <div class="column">
+    <img src="zdjencia/srs7.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="zdjencia/slfa.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="zdjencia/sr8.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="zdjencia/srx7.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+		<div class="column">
+    <img src="zdjencia/sf40.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+  </div>
+		<div class="column">
+    <img src="zdjencia/sp1.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+  </div>
+		<div class="column">
+    <img src="zdjencia/smultipla.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 7</div>
+      <img src="zdjencia/rs7.jpg" style="width:100%">
+    </div>
+<div class="mySlides">
+      <div class="numbertext">2 / 7</div>
+      <img src="zdjencia/lfa.jpg" style="width:100%">
+    </div>
+	  <div class="mySlides">
+      <div class="numbertext">3 / 7</div>
+      <img src="zdjencia/r8.jpg" style="width:100%">
+    </div>
+	  <div class="mySlides">
+      <div class="numbertext">4 / 7</div>
+      <img src="zdjencia/rx7.jpg" style="width:100%">
+    </div>
+	  <div class="mySlides">
+      <div class="numbertext">5 / 7</div>
+      <img src="zdjencia/f40.jpg" style="width:100%">
+    </div>
+	  <div class="mySlides">
+      <div class="numbertext">6 / 7</div>
+      <img src="zdjencia/p1.jpg" style="width:100%">
+    </div>
+	  <div class="mySlides">
+      <div class="numbertext">7 / 7</div>
+      <img src="zdjencia/multipla.jpg" style="width:100%">
+    </div>
+    
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="zdjencia/rs7.jpg" onclick="currentSlide(1)" alt="Audi RS7">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="zdjencia/lfa.jpg" onclick="currentSlide(2)" alt="Lexus LFA">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="zdjencia/r8.jpg" onclick="currentSlide(3)" alt="Audi R8">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="zdjencia/rx7.jpg" onclick="currentSlide(4)" alt="Mazda RX7">
+    </div>
+	  <div class="column">
+      <img class="demo" src="zdjencia/f40.jpg" onclick="currentSlide(5)" alt="Ferrari F40">
+    </div>
+	  <div class="column">
+      <img class="demo" src="zdjencia/p1.jpg" onclick="currentSlide(6)" alt="McLaren P1">
+    </div>
+	  <div class="column">
+      <img class="demo" src="zdjencia/multipla.jpg" onclick="currentSlide(7)" alt="Fiat Multipla">
+    </div>
+  </div>
+</div>
+
+<script>
+// Open the Modal
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+					</div>	
+			</td>
+			<td>
+				<div id="maslo">
+					7 Najpiękniejszych samochodów jakie kiedykolwiek powstały to: Audi RS7, Lexus LFA, Audi R8, Mazda RX7 FD, Ferrari F40, McLaren P1 i Fiat Multipla (informacje o nich znajdziesz na podstronach na pasku na górze). Jest to moja subiektywna opinia, napisz jaki według Ciebie jest najładniejszy samochód w ankiecie poniżej.
+				</div>
+				<h1 id=ankieta>Ankieta</h1>
+	
+	<div id=ankeita>
+    <form action="#" method="post">
+		<fieldset>
+            <legend>Jaki jest według ciebie najpiękniejszy samochód?</legend>
+            <input type="checkbox" >
+            <label >Audi RS7</label>
+            <input type="checkbox" >
+            <label>Lexus LFA</label>
+            <input type="checkbox">
+            <label>Audi R8</label>
+            <input type="checkbox">
+            <label>Mazda RX7</label>
+			<input type="checkbox">
+            <label>Ferrari F40</label>
+			<input type="checkbox">
+            <label>McLaren P1</label>
+			<input type="checkbox">
+            <label>Fiat Multipla</label>
+			<textarea name="komentarz" rows="4" cols="50"></textarea>
+        </fieldset>
+        
+		
+        <input type="submit" value="Wyślij">
+        <input type="reset" value="Wyczyść">
+    </form>
+	</div>
+        </div>
+			</td>
+        </tr>
+    </table>
+	<footer>
+        <p>&copy; 2023 Piotr Sasimowski 2TA</p>
+    </footer>
+</body>
+</html>

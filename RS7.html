@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Audi RS7</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<style>
+		
+		
+		body{
+			background-image: url("zdjencia/srs7.jpg");
+			background-repeat: repeat-y;
+			background-position: right;
+			background-attachment: fixed;
+			margin-right: 290px;
+		}
+		@media screen and (max-width:1200px){
+			body{
+				background-image: none;
+				margin-right: 10px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+	 <h1>7 najpiękniejszych samochodów</h1>
+	</header>
+	
+	
+	
+	<div class="topnav">
+  	<a class="active" href="index.html">Strona główna</a>
+  	<a href="RS7.html">Audi RS7</a>
+  	<a href="LFA.html">Lexus LFA</a>
+ 	<a href="R8.html">Audi R8</a>
+	<a href="RX7.html">Mazda RX7</a>
+	<a href="F40.html">Ferrari F40</a>
+	<a href="P1.html">McLaren P1</a>
+	<a href="Multipla.html">Fiat Multipla</a>
+</div>
+	
+	<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Strona główna</a>
+    <a href="RS7.html">Audi RS7</a>
+    <a href="LFA.html">Lexus LFA</a>
+	  <a href="R8.html">Audi R8</a>
+	  <a href="RX7.html">Mazda RX7</a>
+	  <a href="F40.html">Ferrari F40</a>
+	  <a href="P1.html">McLaren P1</a>
+	  <a href="Multipla.html">Fiat Multipla</a>
+  </div>
+		<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+	</div>
+<nav>
+    <ul>
+      <li><a href="#LMAO">Opis</a></li>
+    </ul>
+    <ul>
+      <li><a href="#Dane">Dane techniczne</a></li>
+    </ul>
+  </nav>
+
+	<div id="LMAO">
+		<br><br>
+		Audi RS7 to flagowy model marki Audi, łączący elegancję z bezkompromisową wydajnością. Z muskularnym nadwoziem, imponującymi detalami stylistycznymi i potężnym silnikiem jest symbolem luksusu i sportowego charakteru. RS7 oferuje nie tylko dynamiczną jazdę, ale także najnowocześniejsze technologie i luksusowe wnętrze, tworząc perfekcyjne połączenie wyjątkowego stylu i doskonałych osiągów. To samochód dedykowany entuzjastom, którzy pragną połączenia mocy z elegancją.
+	<br><br><br><br><br><br><br><br><br><br>
+	<img src="zdjencia/rs7.jpg" class="animated-element">
+	<br><br><br><br><br><br><br><br><br><br>
+	</div>
+	<div id="Dane">
+	<h1>Audi RS7 Technical Specifications</h1>
+  <ul>
+    <li><strong>Silnik:</strong> 4.0-litrowy V8</li>
+    <li><strong>Moc:</strong> Około 591 KM</li>
+    <li><strong>Moment obrotowy:</strong> Około 800 Nm</li>
+    <li><strong>Przyspieszenie 0-100 km/h:</strong> Około 3.5 sekundy</li>
+    <li><strong>Prędkość maksymalna:</strong> 250 km/h (elektronicznie ograniczana)</li>
+    <li><strong>Skrzynia biegów:</strong> Automatyczna skrzynia biegów, 8 biegów</li>
+    <li><strong>Napęd:</strong> Napęd na wszystkie koła (quattro)</li>
+    <li><strong>Zawieszenie:</strong> Adaptacyjne zawieszenie pneumatyczne lub sportowe zawieszenie z regulacją twardości</li>
+    <li><strong>Hamulce:</strong> Hamulce tarczowe, wentylowane i perforowane</li>
+    <li><strong>Wymiary:</strong>
+      <ul>
+        <li>Długość: 5,009 mm</li>
+        <li>Szerokość: 1,950 mm</li
+        <li>Wysokość: 1,419 mm</li>
+      </ul>
+    </li>
+    <li><strong>Wnętrze:</strong>
+      <ul>
+        <li>4 lub 5 miejsc siedzących (w zależności od konfiguracji)</li>
+        <li>Luksusowe wykończenia, zaawansowane technologie, systemy multimedialne</li>
+      </ul>
+    </li>
+    <li><strong>Pojemność bagażnika:</strong> Około 535 litrów</li>
+  </ul>
+
+	
+	</div>
+	<footer>
+        <p>&copy; 2023 Piotr Sasimowski 2TA</p>
+    </footer>
+</body>
+</html>

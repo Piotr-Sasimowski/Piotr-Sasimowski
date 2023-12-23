@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Fiat Multipla</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<style>
+		body{
+			background-image: url("zdjencia/smultipla.jpg");
+			background-repeat: repeat-y;
+			background-position: right;
+			background-attachment: fixed;
+			margin-right: 290px;
+		}
+		@media screen and (max-width:1200px){
+			body{
+				background-image: none;
+				margin-right: 10px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+	 <h1>7 najpiękniejszych samochodów</h1>
+	</header>
+	
+	<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Strona główna</a>
+    <a href="RS7.html">Audi RS7</a>
+    <a href="LFA.html">Lexus LFA</a>
+	  <a href="R8.html">Audi R8</a>
+	  <a href="RX7.html">Mazda RX7</a>
+	  <a href="F40.html">Ferrari F40</a>
+	  <a href="P1.html">McLaren P1</a>
+	  <a href="Multipla.html">Fiat Multipla</a>
+  </div>
+</div>
+	<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+		
+	
+	<div class="topnav">
+  	<a class="active" href="index.html">Strona główna</a>
+  	<a href="RS7.html">Audi RS7</a>
+  	<a href="LFA.html">Lexus LFA</a>
+ 	<a href="R8.html">Audi R8</a>
+	<a href="RX7.html">Mazda RX7</a>
+	<a href="F40.html">Ferrari F40</a>
+	<a href="P1.html">McLaren P1</a>
+	<a href="Multipla.html">Fiat Multipla</a>
+</div>
+	<nav>
+    <ul>
+      <li><a href="#LMAO">Opis</a></li>
+    </ul>
+    <ul>
+      <li><a href="#Dane">Dane techniczne</a></li>
+    </ul>
+  </nav>
+	<div id="LMAO">
+		<br><br>
+Fiat Multipla to samochód osobowy, który zdobył rozpoznawalność dzięki swojemu oryginalnemu designowi i przestronności. Znany jest ze swojej nietypowej sylwetki, charakteryzującej się wysoką sylwetką i szerokim nadwoziem, co przekłada się na wyjątkowo przestronne wnętrze. Fiat Multipla oferuje miejsca dla kilku pasażerów i cechuje się funkcjonalnym podejściem do przewozu osób oraz bagażu. To auto zdobyło popularność ze względu na swoją unikalność i praktyczność.
+	<br><br><br><br><br><br><br><br><br><br>
+	<img src="zdjencia/multipla.jpg" class="animated-element">
+	<br><br><br><br><br><br><br><br><br><br>
+		</div>
+		<div id="Dane">
+	<h1>Parametry Fiat Multipla</h1>
+  <ul>
+    <li><strong>Silnik:</strong> R4, benzynowy</li>
+    <li><strong>Pojemność silnika:</strong> Od 1.6 do 1.9 litra (w zależności od wersji)</li>
+    <li><strong>Moc silnika:</strong> Od 76 do 120 KM (w zależności od wersji)</li>
+    <li><strong>Moment obrotowy:</strong> Od 136 do 181 Nm (w zależności od wersji)</li>
+    <li><strong>Skrzynia biegów:</strong> Manualna, 5-biegowa</li>
+    <li><strong>Napęd:</strong> Przedni (FWD)</li>
+    <li><strong>Zawieszenie:</strong> Niezależne, przednie i tylne</li>
+    <li><strong>Waga:</strong> Od 1,250 do 1,415 kg (w zależności od wersji)</li>
+    <li><strong>Długość:</strong> Około 4,160 mm</li>
+    <li><strong>Szerokość:</strong> Około 1,875 mm</li>
+    <li><strong>Wysokość:</strong> Około 1,660 mm</li>
+    <li><strong>Liczba miejsc:</strong> Do 6 miejsc</li>
+    <li><strong>Produkcja:</strong> 1998–2010</li>
+  </ul>
+	</div>
+	<footer>
+        <p>&copy; 2023 Piotr Sasimowski 2TA</p>
+    </footer>
+</body>
+</html>
